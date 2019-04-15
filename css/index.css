@@ -54,6 +54,8 @@ table {
 
 html, body {
     height: 100%;
+    /* Responsive font sizing */
+    font-size: 62.5%;  
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -90,10 +92,12 @@ h1, h2, h3, h4, h5 {
     }
 
     .header-text h1 {
+        font-size: 3rem; 
         text-align: center;
     }
 
   .header h2 {
+      font-size: 2rem; 
       text-align: center; 
   }
 
@@ -101,4 +105,11 @@ h1, h2, h3, h4, h5 {
     max-width: 20%; 
     height: auto; 
   }
+
+  @media(min-width: 800px) {
+    .menu-button {
+        display: none; 
+      }
+    }
+
 
