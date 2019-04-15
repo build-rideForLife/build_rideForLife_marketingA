@@ -63,4 +63,42 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+/*A master container keeps the entire page aligned. It contains all content */
+.container {
+	/*A set width for my master container, so that no page content is wider than the widest image*/
+	width: 500px; 
+	/*margin: 0 auto; makes sure that everything on the page sits centrally; browser auto-sets margins*/
+	margin: 0 auto;
+  }
+
+  .header {
+    display: flex; 
+    width: 100%; 
+    justify-content:space-between; 
+    align-items: center; 
+  }
+
+  .SAFE-logo {
+    max-width: 20%; 
+    height: auto; 
+    }
+
+    .header-text {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .header-text h1 {
+        text-align: center;
+    }
+
+  .header h2 {
+      text-align: center; 
+  }
+
+  .menu-button {
+    max-width: 20%; 
+    height: auto; 
+  }
+
