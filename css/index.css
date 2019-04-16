@@ -73,6 +73,12 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
   }
 
+  @media(min-width: 800px) {
+    .container {
+        margin: 0 auto; 
+      }
+    }
+
   .header {
     display: flex; 
     width: 100%; 
@@ -80,10 +86,27 @@ h1, h2, h3, h4, h5 {
     align-items: center; 
   }
 
+  @media(min-width: 800px) {
+    .header {
+        max-width: 80%;  
+        border: 2px solid red; 
+        margin: 0 auto; 
+      }
+    }
+
   .SAFE-logo {
     max-width: 20%; 
     height: auto; 
     }
+
+    @media(min-width: 800px) {
+        .SAFE-logo {
+            max-width: 10%;  
+            height: auto; 
+            margin-left: 0%; 
+            border: 2px solid red; 
+          }
+        }
 
     .header-text {
         display: flex; 
@@ -91,25 +114,63 @@ h1, h2, h3, h4, h5 {
         align-items: center; 
     }
 
-    .header-text h1 {
-        font-size: 3rem; 
-        text-align: center;
+    @media(min-width: 800px) {
+        .header-text {
+            display: flex; 
+            flex-wrap: wrap; 
+            width: 30%;  
+            margin-left: 0%; 
+            border: 2px solid red; 
+        }
     }
 
+    .header-text h1 {
+        font-size: 3rem; 
+    }
+
+    @media(min-width: 800px) {
+        .header-text h1 { 
+            /* text-align: left; */
+            /* padding-left: 0%;  */
+          }
+        }
+
   .header h2 {
-      font-size: 2rem; 
-      text-align: center; 
+      font-size: 1.3rem; 
+      text-align: center;  
   }
+
+  @media(min-width: 800px) {
+    .header-text h2 { 
+        text-align: none;
+      }
+    }
 
   .menu-button {
     max-width: 20%; 
     height: auto; 
   }
-
-  @media(min-width: 800px) {
-    .menu-button {
-        display: none; 
-      }
+  
+    @media(min-width: 800px) {
+        .menu-button {
+            display: none; 
+        }
     }
+
+  nav {
+      display: none; 
+      font-size: 1.5rem; 
+  }
+    @media(min-width: 800px) {
+        nav {
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-around; 
+            width: 50%;  
+        }
+    }
+
+  
+
 
 
