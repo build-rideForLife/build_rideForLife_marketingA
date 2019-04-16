@@ -93,6 +93,7 @@ p {
       }
     }
 
+ /* HEADER COMPONENTS  */
   .header {
     display: flex; 
     width: 100%; 
@@ -184,6 +185,8 @@ p {
         }
     }
 
+
+ /* INDEX PAGE STYLING  */
     .intro {
         display: flex; 
         flex-direction: column; 
@@ -292,23 +295,52 @@ p {
         align-items: center;   
     }
 
+    @media(min-width: 800px) {
+        .how {
+            display: flex; 
+            width: 100%;  
+        }
+    }
+    
+    @media(min-width: 800px) {
+        .snapshots {
+            width: 100%; 
+            display: flex; 
+            flex-direction: row; 
+            align-items: center;
+        }
+    }
+
     .how-snapshot {
         display: flex; 
         flex-direction: column; 
         align-items: center; 
-        border: 2px solid blue; 
+    }
+
+    @media(min-width: 800px) {
+        .how-snapshot {
+            width: 50%; 
+            display: flex; 
+            flex-direction: row; 
+        }
+    }
+
+    .how-text {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    @media(min-width: 800px) {
+        .how-text {
+            width: 50%; 
+            display: flex; 
+            flex-direction: column; 
+        }
     }
 
     .app-screenshot {
         justify-content: center; 
-        border: 2px solid red; 
-    }
-
-    @media(min-width: 800px) {
-        .how {
-            flex-direction: row; 
-            justify-content: center; 
-        }
     }
 
     .how .btn {
