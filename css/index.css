@@ -371,10 +371,24 @@ p {
         flex-direction: column;
     }
 
-    .team-photos {
+    /* SPECIAL ABOUT US STYLING  */
+
+    /* Meet the team: column on mobile; row of three on desktop */
+
+    .team {
         display: flex; 
         flex-direction: column; 
         align-items: center; 
+    }
+
+    @media(min-width: 800px) {
+        .team-photos {
+            width: 80%; 
+            display: flex; 
+            flex-direction: row; 
+            flex-wrap: wrap; 
+            justify-content: space-evenly; 
+        }
     }
 
     .teammember {
@@ -386,8 +400,11 @@ p {
         padding-bottom: 5%;  
     }
 
-    /* ABOUT US STYLING  */
     
+
+    
+    
+
     
 
 
