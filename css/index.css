@@ -246,7 +246,8 @@ p {
         padding: 3% 0%;
         text-align: center; 
         font-size: 2rem;
-        font-weight: bold; border-radius: 5px; 
+        font-weight: bold; 
+        border-radius: 5px; 
     }
 
     @media(max-width: 500px) {
@@ -269,11 +270,19 @@ p {
         align-items: center; 
     }
 
-    .why p{
-        padding-right: 2%; 
-        padding-left: 2%;
-        margin-bottom: 2%; 
+    @media(min-width: 800px) {
+        .why {
+            flex-direction: row; 
+            justify-content: center; 
+        }
     }
+
+    @media(min-width: 800px) {
+        .why-text {
+            width: 40%;  
+        }
+    }
+
   
     .how{
         width:100%;
