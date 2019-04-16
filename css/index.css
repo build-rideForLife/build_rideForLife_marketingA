@@ -69,6 +69,10 @@ h2 {
     font-size: 2rem; 
 }
 
+h3 {
+    font-size: 1.5rem; 
+}
+
 p {
     font-size: 1.3rem; 
 }
@@ -241,6 +245,21 @@ p {
     .footer-text {
         display: flex; 
         flex-direction: column;
+    }
+
+    .team-photos {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .teammember {
+        text-align: center; 
+    }
+
+    .headshot {
+        padding-top: 5%;
+        padding-bottom: 5%;  
     }
     
     
