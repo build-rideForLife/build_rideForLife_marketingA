@@ -68,8 +68,9 @@ h1, h2, h3, h4, h5 {
 /*A master container keeps the entire page aligned. It contains all content */
 .container {
 	/*A set width for my master container, so that no page content is wider than the widest image*/
-	width: 500px; 
-	/*margin: 0 auto; makes sure that everything on the page sits centrally; browser auto-sets margins*/
+	max-width: 500px; 
+    /*margin: 0 auto; makes sure that everything on the page sits centrally; browser auto-sets margins*/
+    width: 100%; 
 	margin: 0 auto;
   }
 
@@ -84,6 +85,8 @@ h1, h2, h3, h4, h5 {
     width: 100%; 
     justify-content:space-between; 
     align-items: center; 
+    padding-top: 2%;
+    padding-bottom: 2%;  
   }
 
   @media(min-width: 800px) {
@@ -170,7 +173,22 @@ h1, h2, h3, h4, h5 {
         }
     }
 
+    .intro-img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .btn {
+        
+    }
+
+    .why{
+        width:100%;
+    }
   
+    .how{
+        width:100%;
+    }
 
 
 
