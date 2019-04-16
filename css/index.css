@@ -282,15 +282,33 @@ p {
             width: 40%;  
         }
     }
-
-  
+    
     .how{
         width:100%;
         padding-right: 2%; 
         padding-left: 2%;
         display: flex; 
         flex-direction: column; 
+        align-items: center;   
+    }
+
+    .how-snapshot {
+        display: flex; 
+        flex-direction: column; 
         align-items: center; 
+        border: 2px solid blue; 
+    }
+
+    .app-screenshot {
+        justify-content: center; 
+        border: 2px solid red; 
+    }
+
+    @media(min-width: 800px) {
+        .how {
+            flex-direction: row; 
+            justify-content: center; 
+        }
     }
 
     .how .btn {
