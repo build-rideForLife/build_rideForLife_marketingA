@@ -40,9 +40,9 @@ A multi-page marketing website that explains Ride for Life to prospective riders
 - [] A display that calculates the number of rides that are taken (clicks or another data metric?) in realtime. 
 
 ### Project milestones and timeline 
-- [] Sunday, 4/14: Draft design files ready; Ideas for what parts can become components clear
-- [] Monday, 4/15: Marketing landing page scaffolded with common layout structure implemented. Mobile screen width features starting to come into play.
-- [] Tuesday, 4/16: Marketing site including all pages fully responsive to Mobile and Desktop screen widths.Marketing site including all pages fully responsive to Mobile and Desktop screen widths. Marketing "Login" call to action links user to the Deployed React app login screen.
+- [x] Sunday, 4/14: Draft design files ready; Ideas for what parts can become components clear
+- [x] Monday, 4/15: Marketing landing page scaffolded with common layout structure implemented. Mobile screen width features starting to come into play.
+- [] Marketing site including all pages fully responsive to Mobile and Desktop screen widths. Marketing "Login" call to action links user to the Deployed React app login screen.
 - [] Wednesday, 4/17: Marketing site replace placeholder copy with description of product. Be creative here. Really try and describe your project, your project's features and of course have a cool "About Us" page with relevant copy that describes your team members and their roles. All marketing site pages fully responsive and built out, may still need to polish up styling and layout.
 - [] Thursday, 4/18: Project freeze after 11am PST. Clean up! 
 - [] Friday, 4/19: Demo Day. 
