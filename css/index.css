@@ -65,6 +65,10 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+h2 {
+    font-size: 2rem; 
+}
+
 /*A master container keeps the entire page aligned. It contains all content */
 .container {
 	/*A set width for my master container, so that no page content is wider than the widest image*/
@@ -176,6 +180,7 @@ h1, h2, h3, h4, h5 {
     .intro-img {
         width: 100%; 
         height: auto; 
+        margin-top: 1%; 
     }
 
     .btn {
@@ -193,11 +198,17 @@ h1, h2, h3, h4, h5 {
     }
 
     .why{
-        width:100%;
+        width: 100%;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
     }
   
     .how{
         width:100%;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
     }
 
 
