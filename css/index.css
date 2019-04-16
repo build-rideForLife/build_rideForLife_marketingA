@@ -143,7 +143,7 @@ h2 {
         }
 
   .header h2 {
-      font-size: 1.3rem; 
+      font-size: 1.5rem; 
       text-align: center;  
   }
 
@@ -181,6 +181,7 @@ h2 {
         width: 100%; 
         height: auto; 
         margin-top: 1%; 
+        margin-bottom: 2%; 
     }
 
     .btn {
@@ -202,6 +203,13 @@ h2 {
         display: flex; 
         flex-direction: column; 
         align-items: center; 
+    }
+
+    .why p{
+        padding-right: 2%; 
+        padding-left: 2%;
+        margin-bottom: 2%; 
+        font-size: 1.3rem;  
     }
   
     .how{
