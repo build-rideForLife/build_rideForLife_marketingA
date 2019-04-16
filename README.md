@@ -22,16 +22,15 @@ A multi-page marketing website that explains Ride for Life to prospective riders
 
 #### Must have content  
 - [] Mobile, desktop, and tablet responsivity 
-- [] Home page
-- [] About us page 
-- [] Links to Donate on SAFE website 
+- [x] Home page
+- [x] About us page 
 - [] Connectivity to the app that the team builds 
 
 #### Lambda rubric 
 - [] Pair programming with front end architect
 - [] Clean and organized code; a library or framework was researched and used 
 - [] Tablet views look professional at +800px 
-- [] Responsive units for font-sizing 
+- [x] Responsive units for font-sizing 
 - [] Uses .map, .reduce, .filter, .sort
 - [] Constructors used to build new objects 
 - [] Reusable component built 
