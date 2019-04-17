@@ -447,22 +447,25 @@ footer .footer-text {
     display: none;
   }
 }
-.menu .menu ul li a {
+.menu--open {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  /* This give the height 100% of the screen or, '100% of View Height' */
+  background-color: white;
+  color: purple;
+  border: 1px solid purple;
+}
+.menu--open ul li {
   list-style-type: none;
-  font-size: 32px;
+  justify-items: space-around;
+  font-size: 2rem;
   padding: 30px 0;
   text-align: center;
 }
 @media (min-width: 800px) {
-  .menu .menu ul li a {
+  .menu--open ul li {
     display: none;
   }
-}
-.menu--open {
-  display: block;
-  width: 10%;
-  background-color: purple;
-  border: 1px solid red;
-  border-left: none;
-  border-bottom: none;
 }
