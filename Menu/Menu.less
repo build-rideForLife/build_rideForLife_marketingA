@@ -8,6 +8,9 @@
 }
 
 .menu--open {
+    position: fixed;  
+    top: 10%; 
+    left: 50%; 
     display: flex;
     flex-direction: column; 
     width: 50%; 
@@ -18,9 +21,7 @@
 
     ul li {
         list-style-type: none;
-        justify-items: space-around; 
         font-size: 2rem; 
-        padding: 30px 0;
         text-align: center;
     
         @media @desktop {
