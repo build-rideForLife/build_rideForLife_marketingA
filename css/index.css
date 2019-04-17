@@ -497,14 +497,18 @@ footer .footer-text {
   width: 50%;
   height: auto;
   /* This give the height 100% of the screen or, '100% of View Height' */
-  background-color: white;
-  color: purple;
-  border: 1px solid purple;
+  background-color: #2E3094;
+  color: white;
+  border: 1px solid white;
 }
 .menu--open ul li {
   list-style-type: none;
   font-size: 2rem;
   text-align: center;
+}
+.menu--open ul li a {
+  text-decoration: none;
+  color: white;
 }
 @media (min-width: 800px) {
   .menu--open ul li {
