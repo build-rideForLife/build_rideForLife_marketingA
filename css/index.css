@@ -1,411 +1,254 @@
 /* Setting up my CSS reset */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-html, body {
-    height: 100%;
-    /* Responsive font sizing */
-    font-size: 62.5%;  
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  /* Responsive font sizing */
+  font-size: 62.5%;
+  font-family: 'Titillium Web', sans-serif;
 }
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
-
 h2 {
-    font-size: 2rem; 
+  font-size: 2rem;
 }
-
 h3 {
-    font-size: 1.5rem; 
+  font-size: 1.5rem;
 }
-
 p {
-    font-size: 1.3rem; 
+  font-size: 1.3rem;
 }
-
-/*A master container keeps the entire page aligned. It contains all content */
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1.3rem;
+}
+/*A master container keeps the entire page within range. It contains all content */
 .container {
-	/*A set width for my master container, so that no page content is wider than the widest image*/
-	max-width: 500px; 
-    /*margin: 0 auto; makes sure that everything on the page sits centrally; browser auto-sets margins*/
-    width: 100%; 
-	margin: 0 auto;
+  max-width: 500px;
+  /*margin: 0 auto; makes sure that everything on the page sits centrally; browser auto-sets margins*/
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 800px) {
+  .container {
+    margin: 0 auto;
+    max-width: 100%;
   }
-
-  @media(min-width: 800px) {
-    .container {
-        margin: 0 auto; 
-        max-width: 80%; 
-      }
-    }
-
- /* HEADER COMPONENTS  */
+}
+.header {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+@media (min-width: 800px) {
   .header {
-    display: flex; 
-    width: 100%; 
-    justify-content:space-between; 
-    align-items: center; 
-    padding-top: 2%;
-    padding-bottom: 2%;  
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0%;
   }
-
-  @media(min-width: 800px) {
-    .header {
-        max-width: 80%;  
-        margin: 0 auto; 
-        align-items: center; 
-        padding: 0%; 
-      }
-    }
-
-  .SAFE-logo {
-    max-width: 20%; 
-    height: auto; 
-    }
-
-    @media(min-width: 800px) {
-        .SAFE-logo {
-            max-width: 10%;  
-            height: auto; 
-            margin-left: 0%; 
-          }
-        }
-
-    .header-text {
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    @media(min-width: 800px) {
-        .header-text {
-            display: flex;  
-            width: 30%;  
-            margin-right: 20%; 
-            text-align: left; 
-        }
-    }
-
-    .header-text h1 {
-        font-size: 3rem; 
-    }
-
-    @media(min-width: 800px) {
-        .header-text h1 { 
-            margin-right: 35%; 
-          }
-        }
-
-  .header h2 {
-      font-size: 1.5rem; 
-      text-align: center;  
+}
+.header .SAFE-logo {
+  max-width: 20%;
+  height: auto;
+}
+@media (min-width: 800px) {
+  .header .SAFE-logo {
+    max-width: 10%;
+    height: auto;
+    margin-left: 0%;
   }
-
-  @media(min-width: 800px) {
-    .header-text h2 { 
-        text-align: none;
-      }
-    }
-
-  .menu-button-mobile {
-    max-width: 20%; 
-    height: auto; 
+}
+.header .header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .header .header-text {
+    display: flex;
+    width: 30%;
+    margin-right: 20%;
+    text-align: left;
   }
-  
-    @media(min-width: 800px) {
-        .menu-button {
-            display: none; 
-        }
-    }
-
-  nav {
-      display: none; 
-      font-size: 1.5rem; 
+}
+.header .header-text h1 {
+  font-size: 3rem;
+}
+@media (min-width: 800px) {
+  .header .header-text h1 {
+    margin-right: 35%;
   }
-    @media(min-width: 800px) {
-        nav {
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: space-around; 
-            width: 50%;  
-        }
-    }
-
-
- /* INDEX PAGE STYLING  */
-    .intro {
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-    }
-    
-    .intro-img {
-        width: 100%; 
-        height: auto; 
-        margin-top: 1%; 
-        margin-bottom: 2%; 
-    }
-
-    @media(min-width: 800px) {
-        .intro-img {
-            max-width: 100%;
-        }
-    }
-
-    .btn {
-        background-color:#2E3094;  color: white; 
-        width: 100%; 
-        padding: 3% 0%;
-        text-align: center; 
-        font-size: 2rem;
-        font-weight: bold; border-radius: 5px; 
-    }
-
-    .btn a {
-        color: white; 
-        text-decoration: none; 
-    }
-
-    .btn-signIn-mobile {
-        background-color:#2E3094;  
-        color: white; 
-        width: 100%; 
-        padding: 3% 0%;
-        text-align: center; 
-        font-size: 2rem;
-        font-weight: bold; 
-        border-radius: 5px; 
-    }
-
-    @media(min-width: 500px) {
-        .btn-signIn-mobile {
-            display: none; 
-        }
-    }
-
-    .btn-signIn-mobile a {
-        color: white; 
-        text-decoration: none; 
-    }
-    
-    .btn-signIn-desktop {
-        background-color:#2E3094;  
-        color: white; 
-        width: 40%; 
-        padding: 3% 0%;
-        text-align: center; 
-        font-size: 2rem;
-        font-weight: bold; 
-        border-radius: 5px; 
-    }
-
-    @media(max-width: 500px) {
-        .btn-signIn-desktop {
-            display: none; 
-        }
-    }
-
-    .btn-signIn-desktop a {
-        color: white; 
-        text-decoration: none; 
-    }
-
-
-    
-    .intro{
-        width: 100%;
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    @media(min-width: 800px) {
-        .intro {
-            justify-content: center; 
-        }
-    }
-
-    @media(min-width: 800px) {
-        .why-wrapper {
-            display: flex; 
-            width: 80%;
-            flex-direction: row;   
-            justify-content: center; 
-        }
-    }
-    
-    @media(min-width: 800px) {
-        .why-text {
-            width: 40%;
-            flex-direction: row;   
-        }
-    }
-    
-    .how{
-        width:100%;
-        padding-right: 2%; 
-        padding-left: 2%;
-        display: flex; 
-        flex-direction: column; 
-        align-items: center;   
-    }
-
-    @media(min-width: 800px) {
-        .how {
-            display: flex; 
-            width: 100%;  
-        }
-    }
-    
-    @media(min-width: 800px) {
-        .snapshots {
-            width: 100%; 
-            display: flex; 
-            flex-direction: row; 
-            align-items: center;
-        }
-    }
-
-    .how-snapshot {
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    @media(min-width: 800px) {
-        .how-snapshot {
-            width: 50%; 
-            display: flex; 
-            flex-direction: row; 
-        }
-    }
-
-    .how-text {
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-    }
-    
-    @media(min-width: 800px) {
-        .how-text {
-            width: 50%; 
-            display: flex; 
-            flex-direction: column; 
-        }
-    }
-
-    .app-screenshot {
-        justify-content: center; 
-    }
-
-    .how .btn {
-        width: 40%; 
-        margin-top: 5%; 
-        margin-bottom: 5%; 
-    }
-
-    footer {
-        display: flex; 
-        flex-wrap: wrap; 
-        align-items: center; 
-        justify-content: space-around; 
-        width: 100%;  
-    }
-
-    .footer-text {
-        display: flex; 
-        flex-direction: column;
-    }
-
-    /* SPECIAL ABOUT US STYLING  */
-
-    /* Meet the team: column on mobile; row of three on desktop */
-
-    .team {
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    @media(min-width: 800px) {
-        .team-photos {
-            width: 80%; 
-            display: flex; 
-            flex-direction: row; 
-            flex-wrap: wrap; 
-            justify-content: space-evenly; 
-        }
-    }
-
-    .teammember {
-        text-align: center; 
-    }
-
-    .headshot {
-        padding-top: 5%;
-        padding-bottom: 5%;  
-    }
-
-    
-
-    
-    
-
-    
-
-
-
+}
+.header .header-text h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .header .header-text h2 {
+    text-align: none;
+  }
+}
+.header .menu-button {
+  max-width: 20%;
+  height: auto;
+}
+@media (min-width: 800px) {
+  .header .menu-button {
+    display: none;
+  }
+}
+.header nav {
+  display: none;
+  font-size: 1.5rem;
+}
+@media (min-width: 800px) {
+  .header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+  }
+}

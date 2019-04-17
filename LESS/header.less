@@ -1,0 +1,77 @@
+.header {
+    display: flex; 
+    max-width: 100%; 
+    justify-content:space-between; 
+    align-items: center; 
+    padding-top: 2%;
+    padding-bottom: 2%;  
+
+    @media @desktop {
+        max-width: 100%;
+        margin: 0 auto; 
+        align-items: center; 
+        padding: 0%;
+    }
+
+    .SAFE-logo {
+        max-width: 20%; 
+        height: auto;
+
+        @media @desktop {
+            max-width: 10%; 
+            height: auto; 
+            margin-left: 0%; 
+        }
+    }
+
+    .header-text {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+
+        @media @desktop {
+            display: flex;  
+            width: 30%;  
+            margin-right: 20%; 
+            text-align: left; 
+        }
+        
+        h1 {
+            font-size: 3rem; 
+
+            @media @desktop {
+               margin-right: 35%;  
+            }
+        }
+
+        h2 {
+            font-size: 1.5rem; 
+            text-align: center; 
+
+            @media @desktop {
+                text-align: none;   
+            }
+        }
+    } // header-text 
+
+    .menu-button {
+        max-width: 20%; 
+        height: auto; 
+
+        @media @desktop {
+            display: none;   
+        }
+    }
+
+    nav {
+        display: none; 
+        font-size: 1.5rem;
+
+      @media @desktop {
+          display: flex; 
+          flex-wrap: wrap; 
+          justify-content: space-around; 
+          width: 50%;  
+          }
+      }
+  }
