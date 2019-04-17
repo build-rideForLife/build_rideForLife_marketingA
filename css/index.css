@@ -204,6 +204,7 @@ p {
 @media (min-width: 800px) {
   .container .top-content p {
     max-width: 80%;
+    padding: 0%;
   }
 }
 .container .top-content .btn-signIn-mobile {
