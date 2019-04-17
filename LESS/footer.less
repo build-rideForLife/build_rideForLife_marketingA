@@ -1,0 +1,25 @@
+footer {
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: space-around; 
+    width: 100%;  
+
+    // Since the logo is used in both header and footer, I'm saving in global.
+    .SAFE-logo {
+        max-width: 20%; 
+        height: auto;
+
+        @media @desktop {
+            max-width: 10%; 
+            height: auto; 
+            margin-left: 0%; 
+        }
+    }
+
+    .footer-text {
+        display: flex; 
+        flex-direction: column;
+    }
+
+}

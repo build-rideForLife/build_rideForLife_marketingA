@@ -78,10 +78,13 @@ p {
 }
 
 // Escaped values
-@tablet: ~"(min-width: 500px)";
 @desktop: ~"(min-width: 800px)";
+// I have to set phone, even though mobile first, to hide some buttons
+@phone: ~"(max-width: 500px)"; 
 
 
 // Imports
 @import "global.less";
 @import "header.less";
+@import "footer.less";
+@import "aboutUs.less"; 
