@@ -439,3 +439,30 @@ footer .footer-text {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+.menu {
+  display: none;
+}
+@media (min-width: 800px) {
+  .menu {
+    display: none;
+  }
+}
+.menu .menu ul li a {
+  list-style-type: none;
+  font-size: 32px;
+  padding: 30px 0;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .menu .menu ul li a {
+    display: none;
+  }
+}
+.menu--open {
+  display: block;
+  width: 10%;
+  background-color: purple;
+  border: 1px solid red;
+  border-left: none;
+  border-bottom: none;
+}

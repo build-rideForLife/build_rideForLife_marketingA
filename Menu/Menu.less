@@ -1,0 +1,30 @@
+.menu {
+    display: none; 
+
+    @media @desktop {
+        display: none; 
+    }
+  
+  
+  .menu ul li a {
+    list-style-type: none;
+    font-size: 32px;
+    padding: 30px 0;
+    text-align: center;
+
+    @media @desktop {
+        display: none; 
+    }
+  }
+}
+
+.menu--open {
+    display: block;
+    width: 10%; 
+    // height: 10vh; /* This give the height 100% of the screen or, '100% of View Height' */
+    background-color: purple;
+    border: 1px solid red;
+    border-left: none;
+    border-bottom: none;
+    // z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
+}
