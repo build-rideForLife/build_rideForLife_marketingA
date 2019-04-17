@@ -201,6 +201,11 @@ p {
   padding: 5%;
   line-height: 150%;
 }
+@media (min-width: 800px) {
+  .container .top-content p {
+    max-width: 80%;
+  }
+}
 .container .top-content .btn-signIn-mobile {
   background-color: #2E3094;
   color: white;
@@ -419,6 +424,7 @@ footer {
   width: 100%;
   border-top: 2px solid #2E3094;
   padding-top: 3%;
+  padding-bottom: 3%;
 }
 @media (min-width: 800px) {
   footer {
@@ -453,6 +459,9 @@ footer .footer-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.team .team-photos {
+  padding-bottom: 5%;
 }
 @media (min-width: 800px) {
   .team .team-photos {
