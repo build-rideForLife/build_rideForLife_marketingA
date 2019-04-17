@@ -132,14 +132,14 @@ body {
   height: 100%;
   /* Responsive font sizing */
   font-size: 62.5%;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Bangers', cursive;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
@@ -167,6 +167,7 @@ p {
   /*margin: 0 auto; makes sure that everything on the page sits centrally; browser auto-sets margins*/
   width: 100%;
   margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
 }
 @media (min-width: 800px) {
   .container {

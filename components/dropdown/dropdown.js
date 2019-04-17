@@ -6,7 +6,7 @@ class Dropdown {
       this.dropdown = dropdown;
       
       // Get the element with the ".dropdown-button" class found in the dropdown element (look at the HTML for context)
-      this.button = this.dropdown.querySelector('.dropdown-button');
+      this.button = this.dropdown.querySelector('.menu-button');
       
       // Assign the reference to the ".dropdown-content" class found in the dropdown element
       this.content = this.dropdown.querySelector('.dropdown-content');
