@@ -187,7 +187,7 @@ p {
   }
 }
 .container .top-content .top-img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   margin-top: 1%;
   margin-bottom: 2%;
@@ -334,7 +334,7 @@ p {
 }
 @media (min-width: 800px) {
   .header {
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
     align-items: center;
     padding: 0%;
@@ -360,9 +360,8 @@ p {
 }
 @media (min-width: 800px) {
   .header .header-text {
-    display: flex;
     width: 50%;
-    text-align: left;
+    align-items: none;
   }
 }
 .header .header-text h1 {
@@ -370,7 +369,7 @@ p {
 }
 @media (min-width: 800px) {
   .header .header-text h1 {
-    margin-right: 35%;
+    padding-right: 50%;
   }
 }
 .header .header-text h2 {
@@ -379,7 +378,7 @@ p {
 }
 @media (min-width: 800px) {
   .header .header-text h2 {
-    text-align: none;
+    padding-right: 30%;
   }
 }
 .header .menu-button {
