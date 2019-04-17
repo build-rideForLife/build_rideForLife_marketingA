@@ -409,6 +409,8 @@ footer {
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  border-top: 2px solid purple;
+  padding-top: 3%;
 }
 footer .SAFE-logo {
   max-width: 20%;
