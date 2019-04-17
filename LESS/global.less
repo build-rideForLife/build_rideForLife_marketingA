@@ -34,10 +34,14 @@ p {
         }
 
         .top-img {
-            max-width: 80%; 
+            max-width: 100%; 
             height: auto; 
             margin-top: 1%; 
             margin-bottom: 2%; 
+
+            @media @desktop {
+                max-width: 80%; 
+            }
         }
         // One button for mobile and one for dekstop; they take turns depending on media queries 
         .btn-signIn-mobile {
@@ -82,6 +86,63 @@ p {
     }
 
 
+    // How includes app screenshots on each page, except for the teammembers page 
+
+    .how{
+        width:100%;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;   
+
+        @media @desktop {
+            justify-content: center; 
+        }
+
+        .snapshots {
+
+            @media @desktop {
+                display: flex; 
+                width: 80%;
+                flex-direction: row;  
+            }
+        
+
+            .how-snapshot {
+                display: flex; 
+                flex-direction: column; 
+                align-items: center; 
+
+                @media @desktop {
+                    width: 50%; 
+                    display: flex; 
+                }
+
+                .how-text {
+                    display: flex; 
+                    flex-direction: column; 
+                    text-align: center; 
+                    align-items: center;
+                    padding-top: 10%;  
+    
+                    @media @desktop {
+                        width: 50%; 
+                        display: flex; 
+                        flex-direction: column;  
+                    }
+                }
+                .app-screenshot {
+                    justify-content: center; 
+                }
+
+                .btn {
+                    width: 40%; 
+                    margin-top: 3%; 
+                    margin-bottom: 5%; 
+                }
+            }
+        }
+    }
+    
     // Why is the middle-ish page content; explains the values and virtues on each page. 
 
     .why {
@@ -106,68 +167,6 @@ p {
         }
     }
 
-// How includes app screenshots on each page, except for the teammembers page 
-
-    .how{
-        width:100%;
-        padding-right: 2%; 
-        padding-left: 2%;
-        display: flex; 
-        flex-direction: column; 
-        align-items: center;   
-
-        @media @desktop {
-            display: flex; 
-            width: 100%; 
-        }
-
-        .snapshots {
-
-            @media @desktop {
-            width: 100%; 
-            display: flex; 
-            flex-direction: row; 
-            align-items: center;
-            }
-
-            .how-snapshot {
-                display: flex; 
-                flex-direction: column; 
-                align-items: center; 
-
-                @media @desktop {
-                    width: 50%; 
-                    display: flex; 
-                    flex-direction: row; 
-                }
-            }
-
-            .how-text {
-                display: flex; 
-                flex-direction: column; 
-                text-align: center; 
-                align-items: center;
-                padding-top: 10%;  
-
-                @media @desktop {
-                    width: 50%; 
-                    display: flex; 
-                    flex-direction: column;  
-                }
-            }
-
-            .app-screenshot {
-                justify-content: center; 
-            }
-
-            .btn {
-                width: 40%; 
-                margin-top: 3%; 
-                margin-bottom: 5%; 
-            }
-
-        }
-    }
 
 
     .btn {
@@ -190,6 +189,10 @@ p {
         height: auto; 
         margin-top: 1%; 
         margin-bottom: 2%; 
+
+        @media @desktop {
+            max-width: 80%; 
+        }
     }
 
   } // container 

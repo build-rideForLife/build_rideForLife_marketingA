@@ -187,10 +187,15 @@ p {
   }
 }
 .container .top-content .top-img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   margin-top: 1%;
   margin-bottom: 2%;
+}
+@media (min-width: 800px) {
+  .container .top-content .top-img {
+    max-width: 80%;
+  }
 }
 .container .top-content .btn-signIn-mobile {
   background-color: #2E3094;
@@ -230,6 +235,57 @@ p {
     display: none;
   }
 }
+.container .how {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .container .how {
+    justify-content: center;
+  }
+}
+@media (min-width: 800px) {
+  .container .how .snapshots {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+  }
+}
+.container .how .snapshots .how-snapshot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .container .how .snapshots .how-snapshot {
+    width: 50%;
+    display: flex;
+  }
+}
+.container .how .snapshots .how-snapshot .how-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 10%;
+}
+@media (min-width: 800px) {
+  .container .how .snapshots .how-snapshot .how-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container .how .snapshots .how-snapshot .app-screenshot {
+  justify-content: center;
+}
+.container .how .snapshots .how-snapshot .btn {
+  width: 40%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
 @media (min-width: 800px) {
   .container .why {
     display: flex;
@@ -247,62 +303,6 @@ p {
     width: 40%;
     flex-direction: row;
   }
-}
-.container .how {
-  width: 100%;
-  padding-right: 2%;
-  padding-left: 2%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 800px) {
-  .container .how {
-    display: flex;
-    width: 100%;
-  }
-}
-@media (min-width: 800px) {
-  .container .how .snapshots {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-}
-.container .how .snapshots .how-snapshot {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 800px) {
-  .container .how .snapshots .how-snapshot {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-  }
-}
-.container .how .snapshots .how-text {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  padding-top: 10%;
-}
-@media (min-width: 800px) {
-  .container .how .snapshots .how-text {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-  }
-}
-.container .how .snapshots .app-screenshot {
-  justify-content: center;
-}
-.container .how .snapshots .btn {
-  width: 40%;
-  margin-top: 3%;
-  margin-bottom: 5%;
 }
 .container .btn {
   background-color: #2E3094;
@@ -323,6 +323,11 @@ p {
   height: auto;
   margin-top: 1%;
   margin-bottom: 2%;
+}
+@media (min-width: 800px) {
+  .container .full-img {
+    max-width: 80%;
+  }
 }
 .header {
   display: flex;
@@ -411,6 +416,13 @@ footer {
   border-top: 2px solid #2E3094;
   padding-top: 3%;
 }
+@media (min-width: 800px) {
+  footer {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0%;
+  }
+}
 footer .SAFE-logo {
   max-width: 20%;
   height: auto;
@@ -419,12 +431,19 @@ footer .SAFE-logo {
   footer .SAFE-logo {
     max-width: 10%;
     height: auto;
-    margin-left: 0%;
+    margin-left: 10%;
   }
 }
 footer .footer-text {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 800px) {
+  footer .footer-text {
+    max-width: 80%;
+    height: auto;
+    margin-right: 50%;
+  }
 }
 .team {
   display: flex;
