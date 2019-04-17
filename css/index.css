@@ -197,6 +197,10 @@ p {
     max-width: 80%;
   }
 }
+.container .top-content p {
+  padding: 5%;
+  line-height: 150%;
+}
 .container .top-content .btn-signIn-mobile {
   background-color: #2E3094;
   color: white;
