@@ -532,6 +532,8 @@ footer .footer-text {
 }
 .carousel .slide img {
   justify-content: center;
+  width: 80%;
+  height: auto;
 }
 .carousel .slide p {
   display: flex;
