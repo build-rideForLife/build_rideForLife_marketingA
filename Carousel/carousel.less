@@ -1,18 +1,47 @@
 .carousel {
-    
-    .left-button, .right-button {
-      
-    }
-    .left-button {
-      
-    }
-    .right-button {
-      
-    }
-    img {
-      
-    }
+  display: flex; 
+  flex-direction: column; 
 
+    .slide {
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+
+        @media @desktop {
+          width: 50%; 
+          display: flex; 
+        }
+
+      img {
+        justify-content: center; 
+      }
+
+      p{
+        display: flex; 
+        flex-direction: column; 
+        text-align: center; 
+        align-items: center;
+        padding-top: 10%;  
+
+        @media @desktop {
+            width: 50%; 
+            display: flex; 
+            flex-direction: column;  
+        }        
+      }
+    }
+    
+    .carousel-buttons {
+      display: flex; 
+      justify-content: center; 
+      justify-content: space-evenly; 
+      padding: 5%; 
+
+      .left-button, .right-button {
+        
+      }
+    
+    }
     .carousel-hidden {
       display: none; 
     }
