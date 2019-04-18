@@ -16,15 +16,13 @@ class Carousel {
         this.container.append(firstSlide); 
 
         // Adding event listener for left 
-        this.leftButton.addEventListener('click', this.leftButtonClick)
+        this.leftButton.addEventListener('click', () => this.leftButtonClick())
 
-        this.rightButton.addEventListener('click', this.rightButtonClick)
+        this.rightButton.addEventListener('click', () => this.rightButtonClick())
 
     }
-
-
     
-    leftButtonClick = () => {
+    leftButtonClick() {
         // Hide the old slide 
         // Put old slide object into variable
         const oldSlide = this.slides[this.currentIndex];
@@ -41,7 +39,8 @@ class Carousel {
         this.container.append(newSlide); 
     }
 
-    rightButtonClick = () => {
+    // Carousel methods 
+    rightButtonClick() {
         // Hide the old slide 
         // Put old slide object into variable
         const oldSlide = this.slides[this.currentIndex];

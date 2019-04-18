@@ -1,123 +1,156 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
 
-       
-        <title>Ride for Life</title>
-        <!-- Need to find a favicon  -->
-        <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <title>Ride for Life</title>
+    <!-- Need to find a favicon  -->
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Will need to link to JavaScript scripts  -->
-        <script src="./Menu/Menu.js" async></script>
-        <script src="./Carousel/carousel.js" async></script> 
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Will need to link to JavaScript scripts  -->
+    <script src="./Menu/Menu.js" async></script>
+    <script src="./Carousel/carousel.js" async></script>
+</head>
 
-    <body>
+<body>
+
+    <div class="header">
+
+        <img class="SAFE-logo" src="./img/SAFE-logo.png">
+
+        <div class=header-text>
+            <h1>Ride for Life</h1>
+            <h2>A Safe Mothers Safe Babies service</h2>
+        </div>
+        <img class="menu-button" src="./img/menu-button.png" />
+
+        <!-- Nav only displays when in Desktop view -->
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./aboutUs.html">About us</a>
+            <a href="./mothers.html">Mothers</a>
+            <a href="./drivers.html">Drivers</a>
+            <!-- Link TBD once REACT app ready -->
+            <a href="https://romantic-snyder-fc6e20.netlify.com/">Sign in</a>
+        </nav>
+
+        <!-- Menu will display on mobile only -->
+        <div class="menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutUs.html">About us</a></li>
+                <li><a href="./mothers.html">Mothers</a></li>
+                <li><a href="./drivers.html">Drivers</a></li>
+                <!-- Link TBD once REACT app ready -->
+                <li><a href="https://romantic-snyder-fc6e20.netlify.com/">Sign in</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container home">
+        <section class="top-content">
+            <!-- This sign in button displays only on mobile -->
+            <div class="btn-signIn-mobile">
+                <a href="https://romantic-snyder-fc6e20.netlify.com/">Sign in</a>
+            </div>
+
+            <!-- <intro img stays in container to maintain dimensions /> -->
+            <img src="./img/index/index-intro-img.jpg" class="top-img" alt="woman waiting in motorcycle with baby">
+
+            <!-- This sign in button displays only on desktop -->
+            <div class="btn-signIn-desktop">
+                <a href="https://romantic-snyder-fc6e20.netlify.com/">Sign in</a>
+            </div>
+
+            <section class="why">
+                <div class="tagline">
+                    <h2> Advancing maternal health with on-demand boda boda ambulances.</h2>
+
+                    <h3> Affordable rides replacing long walks.</h3>
+                </div>
+            </section>
             
-            <div class="header">
-                    
-                        <img class= "SAFE-logo" src= "./img/SAFE-logo.png">
-                    
-                    <div class= header-text>
-                        <h1>Ride for Life</h1>
-                        <h2>A Safe Mothers Safe Babies service</h2>
-                    </div>
-                    <img class="menu-button" src="./img/menu-button.png"/> 
-                        <!-- Nav only displays when in Desktop or tablet view -->
-                        <nav>
-                            <a href= "./index.html">Home</a>
-                            <a href= "./aboutUs.html">About us</a>
-                            <a  href= "./mothers.html">Mothers</a>
-                            <a  href= "./drivers.html">Drivers</a>
-                            <!-- Link TBD once REACT app ready -->
-                            <a href= "">Sign in</a>
-                        </nav>
 
-                        <!-- Menu will display on mobile only -->
-                        <div class = "menu">
-                                <ul>
-                                <li><a href= "./index.html">Home</a></li>
-                                  <li><a href= "./aboutUs.html">About us</a></li>
-                                  <li><a  href= "./mothers.html">Mothers</a></li>
-                                  <li><a  href= "./drivers.html">Drivers</a></li>
-                                  <!-- Link TBD once REACT app ready -->
-                                  <li><a href= "">Sign in</a></li>
-                                </ul>
+            <img src="./img/index/diagram.jpg" class="full-img" alt="infographic of woman going to health clinic">
+        </section>
+
+
+        <section class="how">
+            <h2>How it works</h2>
+
+            <div class="snapshots">
+                <!-- Mobile carousel, does not display on desktop -->
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <!-- This is empty because our JavaScript appends each carousel hidden up here with each click. -->
+                    </div>
+
+                    <div class="carousel-hidden">
+                        <div class="slide">
+                            <img src="./Carousel/img/signUp.PNG" alt="Screenshot to add driver account details" />
+                            <p>Mothers and drivers sign up with just a few details.</p>
                         </div>
-            </div>
-
-            <div class= "container home">
-                <section class= "top-content">
-                    <div class= "btn-signIn-mobile">
-                        <a href="">Sign in</a>
-                    </div>
-                    
-                    <!-- <intro img stays in container to maintain dimensions /> -->
-                    <img src= "./img/index/index-intro-img.jpg" class= "top-img" alt= "woman waiting in motorcycle with baby"> 
-
-                    <div class= "btn-signIn-desktop">
-                            <a href="">Sign in</a>
-                    </div>
-                        
-                        <section class= "why">
-                            <div class = "tagline">
-                                <h2> Advancing maternal health with on-demand boda boda ambulances.</h2> 
-
-                                <h3> Affordable rides replacing long walks.</h3> 
-                            </div> 
-                        </section>
-
-                    <img src= "./img/index/diagram.jpg" class= "full-img" alt= "infographic of woman going to health clinic"> 
-                </section>
-
-
-                <section class="how">
-                    <h2>How it works</h2>
-
-                    <!-- Testing out a carousel try two --> 
-                    
-                    <h3>Drivers</h3>
-                    <div class="snapshots">
-                        <div class="carousel"> 
-                            
-                                <div class="carousel-container">
-                                    <!-- This is empty because our JavaScript appends each carousel hidden up here with each click. --> 
-                                </div>
-                           
-                                <div class="carousel-hidden">
-                                    <div class="slide">
-                                        <img src="./Carousel/img/driver/driver-info.png" alt="Screenshot to add driver account details"/>
-                                        <p>Drivers add a few details to create an account.</p>
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./Carousel/img/driver/driver-profile.png" alt="Screenshot of driver profile"/>
-                                        <p>They then personalize their profiles with photos.</p>
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./Carousel/img/driver/driver-drive.png" alt="Screenshot to add app account details" data-img="driver" />
-                                        <p>Then it's time to go live and wait for riders to request a ride.</p>
-                                    </div>
-                                </div>
-                           
-                            <div class="carousel-buttons">
-                                <img src="./Carousel/img/left-carousel-arrow.png" class="left-button">
-                                <img src="./Carousel/img/right-carousel-arrow.png" class="right-button">
-                            </div>
+                        <div class="slide">
+                            <img src="./Carousel/img/driverProfile.PNG" alt="Screenshot of driver profile" />
+                            <p>Drivers add details to their profiles, so mothers can browse and choose.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Carousel/img/findRide.PNG" alt="Screenshot to add app account details" />
+                            <p>Mothers can request a ride on demand, from wherever they are.</p>
                         </div>
                     </div>
-                </section>
 
-                <footer> 
-                    <img class="SAFE-logo" src="./img/SAFE-logo.png">
-                    <div class= "footer-text"> 
-                        <h2>Contact</h2>
-                        <p>Email: info@safemotherssafebabies.org</p>
-                        <p>Phone: +1 (385) 204-5776</p>
+                    <div class="carousel-buttons">
+                        <img src="./Carousel/img/left-carousel-arrow.png" class="left-button">
+                        <img src="./Carousel/img/right-carousel-arrow.png" class="right-button">
                     </div>
-                </footer>
+                </div>
+
+                <!-- Desktop display here -->
+                <div class="how-snapshot">
+                    <img src="./Carousel/img/signUp.PNG" class="app-screenshot"
+                        alt="Screenshot to add driver account details" />
+
+                    <div class="how-text">
+                        <h3> Mothers and drivers sign up with just a few details.</h3>
+                    </div>
+                </div>
+
+                <div class="how-snapshot">
+
+
+                    <img src="./Carousel/img/driverProfile.PNG" class="app-screenshot" alt="app ride view">
+
+                    <div class="how-text">
+                        <h3> Drivers add details to their profiles, so mothers can browse and choose.</h3>
+                    </div>
+
+
+                </div>
+
+                <div class="how-snapshot">
+                    <img src="./Carousel/img/findRide.PNG" class="app-screenshot" alt="app ride view">
+
+                    <div class="how-text">
+                        <h3> Mothers can request a ride on demand, from wherever they are.</h3>
+                    </div>
+                </div>
             </div>
-        </body>
+    </div>
+    </section>
+
+    <footer>
+        <img class="SAFE-logo" src="./img/SAFE-logo.png">
+        <div class="footer-text">
+            <h2>Contact</h2>
+            <p>Email: info@safemotherssafebabies.org</p>
+            <p>Phone: +1 (385) 204-5776</p>
+            <p>www.safemotherssafebabies.org</p>
+        </div>
+    </footer>
+    </div>
+</body>
+
 </html>
