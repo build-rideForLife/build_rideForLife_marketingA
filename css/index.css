@@ -551,6 +551,7 @@ footer .footer-text {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
+  padding: 5%;
 }
 .carousel .carousel-hidden {
   display: none;
