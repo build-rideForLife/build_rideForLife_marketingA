@@ -14,7 +14,6 @@ footer {
         margin-left: 0%; 
     }
 
-    // Since the logo is used in both header and footer, I'm saving in global.
     .SAFE-logo {
         max-width: 20%; 
         height: auto;
@@ -29,6 +28,11 @@ footer {
     .footer-text {
         display: flex; 
         flex-direction: column;
+        
+        p {
+            padding-top: 1%; 
+            padding-bottom: 1%;  
+        }
 
         @media @desktop {
             max-width: 80%; 
