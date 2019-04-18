@@ -169,7 +169,13 @@ p {
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
+  .container {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+@media (min-width: 501px) {
   .container {
     margin: 0 auto;
     max-width: 100%;
@@ -181,7 +187,12 @@ p {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
+  .container .top-content {
+    justify-content: center;
+  }
+}
+@media (min-width: 501px) {
   .container .top-content {
     justify-content: center;
   }
@@ -192,7 +203,12 @@ p {
   margin-top: 1%;
   margin-bottom: 2%;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
+  .container .top-content .top-img {
+    max-width: 80%;
+  }
+}
+@media (min-width: 501px) {
   .container .top-content .top-img {
     max-width: 80%;
   }
@@ -201,7 +217,13 @@ p {
   padding: 5%;
   line-height: 150%;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
+  .container .top-content p {
+    max-width: 80%;
+    padding: 0%;
+  }
+}
+@media (min-width: 501px) {
   .container .top-content p {
     max-width: 80%;
     padding: 0%;
@@ -221,7 +243,12 @@ p {
   color: white;
   text-decoration: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
+  .container .top-content .btn-signIn-mobile {
+    display: none;
+  }
+}
+@media (min-width: 501px) {
   .container .top-content .btn-signIn-mobile {
     display: none;
   }
@@ -251,12 +278,25 @@ p {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .container .how {
     justify-content: center;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 501px) {
+  .container .how {
+    justify-content: center;
+  }
+}
+@media (min-width: 1000px) {
+  .container .how .snapshots {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 501px) {
   .container .how .snapshots {
     display: flex;
     width: 80%;
@@ -267,7 +307,14 @@ p {
 .container .how .snapshots .how-snapshot {
   display: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
+  .container .how .snapshots .how-snapshot {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 501px) {
   .container .how .snapshots .how-snapshot {
     width: 20%;
     display: flex;
@@ -277,7 +324,14 @@ p {
 .container .how .snapshots .how-snapshot .how-text {
   display: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
+  .container .how .snapshots .how-snapshot .how-text {
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+}
+@media (min-width: 501px) {
   .container .how .snapshots .how-snapshot .how-text {
     width: 100%;
     display: flex;
@@ -287,7 +341,15 @@ p {
 .container .how .snapshots .how-snapshot .app-screenshot {
   display: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
+  .container .how .snapshots .how-snapshot .app-screenshot {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 501px) {
   .container .how .snapshots .how-snapshot .app-screenshot {
     display: flex;
     flex-direction: row;
@@ -298,14 +360,29 @@ p {
 .container .how .snapshots .how-snapshot .btn {
   display: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .container .how .snapshots .how-snapshot .btn {
     width: 40%;
     margin-top: 3%;
     margin-bottom: 5%;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 501px) {
+  .container .how .snapshots .how-snapshot .btn {
+    width: 40%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+}
+@media (min-width: 1000px) {
+  .container .why {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (min-width: 501px) {
   .container .why {
     display: flex;
     width: 80%;
@@ -317,7 +394,13 @@ p {
   padding: 5%;
   text-align: center;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
+  .container .why .why-text {
+    width: 40%;
+    flex-direction: row;
+  }
+}
+@media (min-width: 501px) {
   .container .why .why-text {
     width: 40%;
     flex-direction: row;
@@ -343,7 +426,12 @@ p {
   margin-top: 1%;
   margin-bottom: 2%;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
+  .container .full-img {
+    max-width: 80%;
+  }
+}
+@media (min-width: 501px) {
   .container .full-img {
     max-width: 80%;
   }
@@ -356,7 +444,7 @@ p {
   padding-top: 2%;
   padding-bottom: 2%;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header {
     max-width: 80%;
     margin: 0 auto;
@@ -364,16 +452,28 @@ p {
     padding: 0%;
   }
 }
+@media (min-width: 501px) {
+  .header {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
 .header .SAFE-logo {
   max-width: 20%;
   height: auto;
-  border: 0;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header .SAFE-logo {
     max-width: 10%;
     height: auto;
     margin-left: 0%;
+  }
+}
+@media (min-width: 501px) {
+  .header .SAFE-logo {
+    max-width: 15%;
   }
 }
 .header .header-text {
@@ -382,16 +482,22 @@ p {
   align-items: center;
   width: 100%;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header .header-text {
     width: 50%;
     align-items: none;
   }
 }
+@media (min-width: 501px) {
+  .header .header-text {
+    width: 50%;
+    align-items: center;
+  }
+}
 .header .header-text h1 {
   font-size: 3rem;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header .header-text h1 {
     padding-right: 50%;
   }
@@ -400,7 +506,7 @@ p {
   font-size: 1.5rem;
   text-align: center;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header .header-text h2 {
     padding-right: 30%;
   }
@@ -409,7 +515,7 @@ p {
   max-width: 20%;
   height: auto;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header .menu-button {
     display: none;
   }
@@ -418,7 +524,7 @@ p {
   display: none;
   font-size: 1.5rem;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header nav {
     display: flex;
     flex-wrap: wrap;
@@ -436,7 +542,7 @@ footer {
   padding-top: 3%;
   padding-bottom: 3%;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   footer {
     max-width: 100%;
     height: auto;
@@ -447,7 +553,7 @@ footer .SAFE-logo {
   max-width: 20%;
   height: auto;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   footer .SAFE-logo {
     max-width: 10%;
     height: auto;
@@ -458,7 +564,7 @@ footer .footer-text {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   footer .footer-text {
     max-width: 80%;
     height: auto;
@@ -473,7 +579,7 @@ footer .footer-text {
 .team .team-photos {
   padding-bottom: 5%;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .team .team-photos {
     width: 80%;
     display: flex;
@@ -492,7 +598,7 @@ footer .footer-text {
 .menu {
   display: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .menu {
     display: none;
   }
@@ -519,7 +625,7 @@ footer .footer-text {
   text-decoration: none;
   color: white;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .menu--open ul li {
     display: none;
   }
@@ -528,7 +634,7 @@ footer .footer-text {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .carousel {
     display: none;
   }
@@ -538,7 +644,7 @@ footer .footer-text {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .carousel .slide {
     width: 50%;
     display: flex;
@@ -556,7 +662,7 @@ footer .footer-text {
   align-items: center;
   padding-top: 10%;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .carousel .slide p {
     width: 50%;
     display: flex;
