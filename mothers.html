@@ -1,31 +1,128 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
-        <!-- Need to find a favicon icon  -->
+        <meta charset="utf-8">
+
+       
+        <title>Ride for Life</title>
+        <!-- Need to find a favicon  -->
         <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Will need to link to JavaScript scripts  -->
-        <!-- Will need to find Google fonts here  -->
+        <script src="./Menu/Menu.js" async></script>
     </head>
 
     <body>
-        <div class="header">
-            <!-- <img class="SAFE-logo" src="./img/" /> -->
-            <h1>Ride for Life</h1>
-            <h2>Safe mothers, safe babies, safe world</h2>
-            <!-- <img class="menu-button" src="./img/" /> -->
-        </div>
-        <div class="menu">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Mothers</li>
-                <li>Drivers</li>
-                <li>Sign in</li>
-                <li>Donate</li>
-            </ul>
-        </div>
+            
+            <div class="header">
+                    <img class="SAFE-logo" src="./img/SAFE-logo.png">
+                    <div class= header-text>
+                        <h1>Ride for Life</h1>
+                        <h2>A Safe Mothers Safe Babies service</h2>
+                    </div>
+                    <img class="menu-button" src="./img/menu-button.png"/> 
+                        <!-- Nav only displays when in Desktop or tablet view -->
+                        <nav>
+                                <a href= "./index.html">Home</a>
+                                <a href= "./aboutUs.html">About us</a>
+                                <a  href= "./mothers.html">Mothers</a>
+                                <a  href= "./drivers.html">Drivers</a>
+                                <!-- Link TBD once REACT app ready -->
+                                <a href= "">Sign in</a>
+                            </nav>
     
-    </body>
+                            <!-- Menu will display on mobile only -->
+                            <div class = "menu">
+                                    <ul>
+                                    <li><a href= "./index.html">Home</a></li>
+                                      <li><a href= "./aboutUs.html">About us</a></li>
+                                      <li><a  href= "./mothers.html">Mothers</a></li>
+                                      <li><a  href= "./drivers.html">Drivers</a></li>
+                                      <!-- Link TBD once REACT app ready -->
+                                      <li><a href= "">Sign in</a></li>
+                                    </ul>
+                            </div>
+            </div>
 
+            <div class= "container home">
+                
+                <section class= "top-content">
+                    <div class= "btn-signIn-mobile">
+                        <a href="">Sign in</a>
+                    </div>
+                    <!-- <intro img stays in container to maintain dimensions /> -->
+                    <img src= "./img/mothers/mothers-intro-img.jpg" class= "top-img" alt= "mother and baby"> 
+        
+
+                <div class= "btn-signIn-desktop">
+                        <a href="">Sign in</a>
+                </div>
+
+                <h2>Why choose Ride for Life?</h2>
+                        
+                    <p>SAFE partnered with Ugandan community members and medical professionals to develop a cost-effective solution to the traditional expensive, out-of-the-way, and unreliable transit options to and from health clinics: our motorcycle ambulance system. We provided training in defensive and ambulance driving to volunteers, who now respond to on-demand pickup requess through our app, which also handles a nominal and always transparent fee.</p> 
+                 
+        
+                        <img src= "./img/mothers/mothers-faster-img.jpg" class= "full-img" alt= "woman in a motorcycle cartdriving to clinic">
+
+                        <h2>Faster healthcare</h2>
+                        <p>Doggo ipsum you are doing me a frighten long woofer much ruin diet ruff very jealous pupper woofer pupperino maximum borkdrive very jealous pupper, heckin angery woofer borkdrive shibe the neighborhood pupper most angery pupper I have ever seen the neighborhood pupper clouds. Heckin good boys and girls puggo very jealous pupper ruff, dat tungg tho blep. noodle horse floofs borkf. </p>
+                
+
+                
+                        <img src= "./img/mothers/mothers-quality-care.jpg" class= "full-img" alt= "woman nurse taking care of pregnant woman">
+
+                        <h2>Quality care</h2>
+                        <p>Doggo ipsum you are doing me a frighten long woofer much ruin diet ruff very jealous pupper woofer pupperino maximum borkdrive very jealous pupper, heckin angery woofer borkdrive shibe the neighborhood pupper most angery pupper I have ever seen the neighborhood pupper clouds. Heckin good boys and girls puggo very jealous pupper ruff, dat tungg tho blep. noodle horse floofs borkf. </p>
+                
+
+                
+                        <img src= "./img/drivers/driver-community.jpg" class= "full-img" alt= "group of motorcycle drivers in front of building">
+                        <h2>Experienced drivers</h2>
+                        <p>Doggo ipsum you are doing me a frighten long woofer much ruin diet ruff very jealous pupper woofer pupperino maximum borkdrive very jealous pupper, heckin angery woofer borkdrive shibe the neighborhood pupper most angery pupper I have ever seen the neighborhood pupper clouds. Heckin good boys and girls puggo very jealous pupper ruff, dat tungg tho blep. noodle horse floofs borkf. </p> 
+    
+
+                <section class="how">
+                    <h2>How it works</h2>
+
+                    <div class= "snapshots">
+                        <div class= "how-snapshot"> 
+                            <img src= "./img/driver-profile.png" class= "app-screenshot" alt= "app driver onboarding view">
+
+                            <div class= "how-text">
+                                <h3> Browse our network of trusted drivers. </h3>
+                            </div>
+
+                        </div> 
+
+                         <div class= "how-snapshot">
+                            <img src= "./img/mother-ride.png" class= "app-screenshot" alt= "app ride view">
+
+                            <div class= "how-text">
+                                <h3> Pick a driver among options. </h3>  
+                            </div>
+
+                            <div class= "btn">
+                                <a href="./mothers.html">Call a ride</a>
+                            </div> 
+                        </div>
+                    </div>  
+
+                </section>
+                    </div>
+                </div>   
+                </section>
+
+                <footer> 
+                    <img class="SAFE-logo" src="./img/SAFE-logo.png">
+                    <div class= "footer-text"> 
+                        <h2>Contact</h2>
+                        <p>Email: info@safemotherssafebabies.org</p>
+                        <p>Phone: +1 (385) 204-5776</p>
+                    </div>
+                </footer>
+            </div>
+        </body>
 </html>

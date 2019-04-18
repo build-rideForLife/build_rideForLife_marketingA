@@ -1,0 +1,517 @@
+/* Setting up my CSS reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  /* Responsive font sizing */
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1.3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1.3rem;
+}
+/*A master container keeps the entire page within range. It contains all content */
+.container {
+  max-width: 500px;
+  /*margin: 0 auto; makes sure that everything on the page sits centrally; browser auto-sets margins*/
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+@media (min-width: 800px) {
+  .container {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+.container .top-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .container .top-content {
+    justify-content: center;
+  }
+}
+.container .top-content .top-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+@media (min-width: 800px) {
+  .container .top-content .top-img {
+    max-width: 80%;
+  }
+}
+.container .top-content p {
+  padding: 5%;
+  line-height: 150%;
+}
+@media (min-width: 800px) {
+  .container .top-content p {
+    max-width: 80%;
+    padding: 0%;
+  }
+}
+.container .top-content .btn-signIn-mobile {
+  background-color: #2E3094;
+  color: white;
+  width: 100%;
+  padding: 3% 0%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.container .top-content .btn-signIn-mobile a {
+  color: white;
+  text-decoration: none;
+}
+@media (min-width: 800px) {
+  .container .top-content .btn-signIn-mobile {
+    display: none;
+  }
+}
+.container .top-content .btn-signIn-desktop {
+  background-color: #2E3094;
+  color: white;
+  width: 40%;
+  padding: 3% 0%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.container .top-content .btn-signIn-desktop a {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .container .top-content .btn-signIn-desktop {
+    display: none;
+  }
+}
+.container .how {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .container .how {
+    justify-content: center;
+  }
+}
+@media (min-width: 800px) {
+  .container .how .snapshots {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+  }
+}
+.container .how .snapshots .how-snapshot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .container .how .snapshots .how-snapshot {
+    width: 50%;
+    display: flex;
+  }
+}
+.container .how .snapshots .how-snapshot .how-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 10%;
+}
+@media (min-width: 800px) {
+  .container .how .snapshots .how-snapshot .how-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container .how .snapshots .how-snapshot .app-screenshot {
+  justify-content: center;
+}
+.container .how .snapshots .how-snapshot .btn {
+  width: 40%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+@media (min-width: 800px) {
+  .container .why {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.container .why .tagline {
+  padding: 5%;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .container .why .why-text {
+    width: 40%;
+    flex-direction: row;
+  }
+}
+.container .btn {
+  background-color: #2E3094;
+  color: white;
+  width: 100%;
+  padding: 3% 0%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.container .btn a {
+  color: white;
+  text-decoration: none;
+}
+.container .full-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+@media (min-width: 800px) {
+  .container .full-img {
+    max-width: 80%;
+  }
+}
+.header {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+@media (min-width: 800px) {
+  .header {
+    max-width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0%;
+  }
+}
+.header .SAFE-logo {
+  max-width: 20%;
+  height: auto;
+  border: 0;
+}
+@media (min-width: 800px) {
+  .header .SAFE-logo {
+    max-width: 10%;
+    height: auto;
+    margin-left: 0%;
+  }
+}
+.header .header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .header .header-text {
+    width: 50%;
+    align-items: none;
+  }
+}
+.header .header-text h1 {
+  font-size: 3rem;
+}
+@media (min-width: 800px) {
+  .header .header-text h1 {
+    padding-right: 50%;
+  }
+}
+.header .header-text h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .header .header-text h2 {
+    padding-right: 30%;
+  }
+}
+.header .menu-button {
+  max-width: 20%;
+  height: auto;
+}
+@media (min-width: 800px) {
+  .header .menu-button {
+    display: none;
+  }
+}
+.header nav {
+  display: none;
+  font-size: 1.5rem;
+}
+@media (min-width: 800px) {
+  .header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+  }
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  border-top: 2px solid #2E3094;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+@media (min-width: 800px) {
+  footer {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0%;
+  }
+}
+footer .SAFE-logo {
+  max-width: 20%;
+  height: auto;
+}
+@media (min-width: 800px) {
+  footer .SAFE-logo {
+    max-width: 10%;
+    height: auto;
+    margin-left: 10%;
+  }
+}
+footer .footer-text {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  footer .footer-text {
+    max-width: 80%;
+    height: auto;
+    margin-right: 50%;
+  }
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team .team-photos {
+  padding-bottom: 5%;
+}
+@media (min-width: 800px) {
+  .team .team-photos {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.team .teammember {
+  text-align: center;
+}
+.team .headshot {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.menu {
+  display: none;
+}
+@media (min-width: 800px) {
+  .menu {
+    display: none;
+  }
+}
+.menu--open {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  /* This give the height 100% of the screen or, '100% of View Height' */
+  background-color: #2E3094;
+  color: white;
+  border: 1px solid white;
+}
+.menu--open ul li {
+  list-style-type: none;
+  font-size: 2rem;
+  text-align: center;
+}
+.menu--open ul li a {
+  text-decoration: none;
+  color: white;
+}
+@media (min-width: 800px) {
+  .menu--open ul li {
+    display: none;
+  }
+}

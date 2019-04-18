@@ -2,72 +2,131 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       
         <title>Ride for Life</title>
         <!-- Need to find a favicon  -->
         <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Will need to link to JavaScript scripts  -->
-        <!-- Will need to find Google fonts here  -->
+        <script src="./Menu/Menu.js" async></script>
+        <!-- <script src="./Slideshow/slideshow.js" async></script> -->
     </head>
 
     <body>
+            
             <div class="header">
-                <img class="SAFE-logo" src="./img/SAFE-logo.png"/> 
-                <h1>Ride for Life</h1>
-                <h2>Safe mothers, safe babies, safe world</h2>
-                <img class="menu-button" src="./img/menu-button.png"/> 
-            </div>
-            <div class="menu">
-                <ul>
-                    <li a href= "./index.html">Home</li>
-                    <li a href= "./aboutUs.html">About us</li>
-                    <li a href= "./mothers.html">Mothers</li>
-                    <li a href= "./drivers.html">Drivers</li>
-                    <!-- Link TBD once REACT app ready -->
-                    <li>Sign in</li>
-                    <li a href= "https://squareup.com/market/safe-mothers-safe-babies/">Donate</li>
-                </ul>
+                    
+                        <img class= "SAFE-logo" src= "./img/SAFE-logo.png">
+                    
+                    <div class= header-text>
+                        <h1>Ride for Life</h1>
+                        <h2>A Safe Mothers Safe Babies service</h2>
+                    </div>
+                    <img class="menu-button" src="./img/menu-button.png"/> 
+                        <!-- Nav only displays when in Desktop or tablet view -->
+                        <nav>
+                            <a href= "./index.html">Home</a>
+                            <a href= "./aboutUs.html">About us</a>
+                            <a  href= "./mothers.html">Mothers</a>
+                            <a  href= "./drivers.html">Drivers</a>
+                            <!-- Link TBD once REACT app ready -->
+                            <a href= "">Sign in</a>
+                        </nav>
+
+                        <!-- Menu will display on mobile only -->
+                        <div class = "menu">
+                                <ul>
+                                <li><a href= "./index.html">Home</a></li>
+                                  <li><a href= "./aboutUs.html">About us</a></li>
+                                  <li><a  href= "./mothers.html">Mothers</a></li>
+                                  <li><a  href= "./drivers.html">Drivers</a></li>
+                                  <!-- Link TBD once REACT app ready -->
+                                  <li><a href= "">Sign in</a></li>
+                                </ul>
+                        </div>
             </div>
 
             <div class= "container home">
-                <section class= "intro">
-                    <!-- <intro img stays in container to maintain dimensions /> -->
-                    <img src= "./img/index-intro-img.jpg" class= "intro-img" alt= "woman with baby on back"> 
-
-                    <div class= "btn">
+                <section class= "top-content">
+                    <div class= "btn-signIn-mobile">
                         <a href="">Sign in</a>
                     </div>
+                    
+                    <!-- <intro img stays in container to maintain dimensions /> -->
+                    <img src= "./img/index/index-intro-img.jpg" class= "top-img" alt= "woman waiting in motorcycle with baby"> 
+
+                    <div class= "btn-signIn-desktop">
+                            <a href="">Sign in</a>
+                    </div>
+                        
+                        <section class= "why">
+                            <div class = "tagline">
+                                <h2> Advancing maternal health with on-demand boda boda ambulances.</h2> 
+
+                                <h3> Affordable rides replacing long walks.</h3> 
+                            </div> 
+                        </section>
+
+                    <img src= "./img/index/diagram.jpg" class= "full-img" alt= "infographic of woman going to health clinic"> 
                 </section>
 
-                <section class= "why">
-                    <h2>Why Ride for Life?</h2>
-                    <p>Doggo ipsum you are doing me a frighten long woofer much ruin diet ruff very jealous pupper woofer pupperino maximum borkdrive very jealous pupper, heckin angery woofer borkdrive shibe the neighborhood pupper most angery pupper I have ever seen the neighborhood pupper clouds. Heckin good boys and girls puggo very jealous pupper ruff, dat tungg tho blep. noodle horse floofs borkf. Doing me a frighten boofers borkdrive doing me a frighten much ruin diet dat tungg tho puggo, aqua doggo heckin good boys smol borking doggo with a long snoot for pats thicc. Bork maximum borkdrive heckin good boys very jealous pupper big ol pupper, length boy vvv fluffer borkf many pats, length boy puggorino pats.</p>
-                </section>
 
                 <section class="how">
                     <h2>How it works</h2>
-                    <img src= "./img/driver-profile.png" class= "app-screenshot" alt= "app driver onboarding view">
-                    <h3>For drivers</h3>
-                    <p> Drivers create a profile within the app with just a few details. </p>
-                    <button>Read more about the driver experience</button>
 
-                    <img src= "./img/mother-ride.png" class= "app-screenshot" alt= "app ride view">
-                    <h3>For mothers</h3>
-                    <p> Mothers can browse our network of drivers to make an informed choice. </p>
-                    <button>Read more about the mother experience</button>
+                    <!-- Testing out a slideshow --> 
+                    <!-- <h3>Drivers</h3>
+                        <div class="carousel">
+                            <div class="left-button"></div>
+                            <img src="./img/driver-profile.png" alt="Screenshot to add app account details" data-img="driver" />
+                            <img src="./img/driver-profile.png" alt="Screenshot of profile created" data-img="driver" />
+                            <img src="./img/driver-profile.png" alt="Screenshot of app waiting for ride" data-img="driver" />
+                            <div class="right-button"></div>
+                        </div>
+                    </div>  -->
+
+
+                     <div class= "snapshots">
+                        <div class= "how-snapshot">
+                            <h3>Drivers</h3> 
+                            <img src= "./img/driver-profile.png" class= "app-screenshot" alt= "app driver onboarding view">
+
+                            <div class= "how-text">
+                                <h3> Drivers create profiles in minutes. </h3>
+                            </div>
+
+                            <div class= "btn">
+                                <a href="./drivers.html">Drive with us</a>
+                            </div>
+                        </div> 
+
+                         <div class= "how-snapshot">
+                            <h3>Mothers</h3>
+                            <img src= "./img/mother-ride.png" class= "app-screenshot" alt= "app ride view">
+
+                            <div class= "how-text">
+                                <h3> Mothers can browse profiles and choose who picks them up. </h3>  
+                            </div>
+
+                            <div class= "btn">
+                                <a href="./mothers.html">Ride with us</a>
+                            </div> 
+                        </div>
+                    </div>  
+
                 </section>
 
-                <address> 
-                    <h4>Uganda address</h4>
-                    <p>Box 355</br> 
-                    <p>Iganga, Uganda</br>
-                    <p>East Africa</br> 
-
-                    <h4>U.S. address</h4>  
-                    <p>2628 State St.</br> 
-                    <p>La Crosse, WI</br>
-                    <p>United States</br>  
-                </address>
+                <footer> 
+                    <img class="SAFE-logo" src="./img/SAFE-logo.png">
+                    <div class= "footer-text"> 
+                        <h2>Contact</h2>
+                        <p>Email: info@safemotherssafebabies.org</p>
+                        <p>Phone: +1 (385) 204-5776</p>
+                    </div>
+                </footer>
             </div>
         </body>
 </html>
