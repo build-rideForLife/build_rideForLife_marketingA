@@ -175,7 +175,7 @@ p {
     max-width: 100%;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .container {
     margin: 0 auto;
     max-width: 100%;
@@ -192,7 +192,7 @@ p {
     justify-content: center;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .container .top-content {
     justify-content: center;
   }
@@ -208,7 +208,7 @@ p {
     max-width: 80%;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .container .top-content .top-img {
     max-width: 80%;
   }
@@ -223,7 +223,7 @@ p {
     padding: 0%;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .container .top-content p {
     max-width: 80%;
     padding: 0%;
@@ -248,7 +248,7 @@ p {
     display: none;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .container .top-content .btn-signIn-mobile {
     display: none;
   }
@@ -283,7 +283,7 @@ p {
     justify-content: center;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .container .how {
     justify-content: center;
   }
@@ -296,7 +296,7 @@ p {
     justify-content: space-evenly;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .container .how .snapshots {
     display: flex;
     width: 80%;
@@ -314,7 +314,7 @@ p {
     flex-direction: column;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .container .how .snapshots .how-snapshot {
     width: 20%;
     display: flex;
@@ -331,7 +331,7 @@ p {
     text-align: center;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .container .how .snapshots .how-snapshot .how-text {
     width: 100%;
     display: flex;
@@ -349,7 +349,7 @@ p {
     height: auto;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .container .how .snapshots .how-snapshot .app-screenshot {
     display: flex;
     flex-direction: row;
@@ -367,7 +367,7 @@ p {
     margin-bottom: 5%;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .container .how .snapshots .how-snapshot .btn {
     width: 40%;
     margin-top: 3%;
@@ -382,7 +382,7 @@ p {
     justify-content: center;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .container .why {
     display: flex;
     width: 80%;
@@ -400,7 +400,7 @@ p {
     flex-direction: row;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .container .why .why-text {
     width: 40%;
     flex-direction: row;
@@ -431,7 +431,7 @@ p {
     max-width: 80%;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .container .full-img {
     max-width: 80%;
   }
@@ -452,7 +452,7 @@ p {
     padding: 0%;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .header {
     display: flex;
     max-width: 80%;
@@ -471,7 +471,7 @@ p {
     margin-left: 0%;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .header .SAFE-logo {
     max-width: 15%;
   }
@@ -488,7 +488,7 @@ p {
     align-items: none;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 800px) {
   .header .header-text {
     width: 50%;
     align-items: center;

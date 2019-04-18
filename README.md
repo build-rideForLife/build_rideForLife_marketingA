@@ -3,13 +3,16 @@
 ## Website live at: 
 https://app.netlify.com/sites/peaceful-poincare-7d74b7/overview 
 
-## Project brief by Kimberlee Johnson 
-
-### Background and purpose 
+## Background and purpose 
 
 [SAFE](http://www.safemotherssafebabies.org/) serves mothers in Uganda to improve maternal and child survival. One of the biggest obstacles women face while pregnant is getting to a health facility to safely deliver. Most people do not own a car or a motorcycle, and a majority live greater than 5 km from a health center (an hour by foot). SAFE provides motorcycle ambulances to improve this problem, but mothers have a hard time contacting them in time. 
 
 My Lambda School Build Week team built an app to solve this problem by identifying and sending a text to the nearest motorcycle ambulance driver. My role was to build out a marketing page that raised awareness for the app. You can read our full Project Brief [here](https://docs.google.com/document/d/1P0qWOmw0ypnF-0viN9N94EMZqlG3g_OduNoonBzYEK0/edit). 
+
+Feel free to use this code to make your own marketing sites! 
+
+## Tools used 
+I styled this site using HTML, CSS including a LESS compiler, and vanilla JavaScript for my components. 
 
 ### Primary audiences 
 This app contains two user types. A ride requester (pregnant mom, or their caregiver) and a trained motorcycle ambulance drive. I'll assume that these are the two same users who might be visiting the website to learn more about the app. 
@@ -24,19 +27,11 @@ Other visitors to the website could include: SAFE donors, and people with an int
 ### Key deliverable 
 A multi-page marketing website that explains Ride for Life to prospective riders and drivers and is responsive on both mobile and desktop. 
 
-#### Must have content  
+#### Must have features  
 - [x] Mobile, desktop, and tablet responsivity (using media queries)
 - [x] Home page
 - [x] About us page 
 - [x] Links to Ride for Life team app 
-
-#### Lambda rubric 
-- [] Pair programming with front end architect
-- [] Clean and organized code; a library or framework was researched and used 
-- [] Tablet views look professional at +800px 
-- [x] Responsive units for font-sizing
-- [x] Constructors used to build new objects 
-- [] Reusable component built 
 
 #### Nice to have features 
 - [] A display that calculates the number of rides that are taken (clicks or another data metric?) in realtime. 
