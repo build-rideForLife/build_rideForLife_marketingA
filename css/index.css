@@ -213,8 +213,12 @@ p {
     max-width: 80%;
   }
 }
+.container .top-content h2 {
+  padding: 2%;
+}
 .container .top-content p {
-  padding: 5%;
+  padding: 2%;
+  padding-top: 0%;
   line-height: 150%;
 }
 @media (min-width: 1000px) {
