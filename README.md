@@ -1,7 +1,7 @@
 # Ride for Life marketing page 
 
 ## Website live at: 
-https://app.netlify.com/sites/peaceful-poincare-7d74b7/overview 
+https://peaceful-poincare-7d74b7.netlify.com/
 
 ## Background and purpose 
 
