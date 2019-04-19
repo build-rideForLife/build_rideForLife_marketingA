@@ -678,6 +678,11 @@ footer .footer-text p {
     display: none;
   }
 }
+@media (min-width: 800px) {
+  .carousel {
+    display: none;
+  }
+}
 .carousel .slide {
   display: flex;
   flex-direction: column;
